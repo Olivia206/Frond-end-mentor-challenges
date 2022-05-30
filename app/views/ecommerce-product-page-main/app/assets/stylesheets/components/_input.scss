@@ -24,6 +24,11 @@
     }
     button {
         cursor: pointer;
+        transition: .3s ease;
+        &:hover {
+            opacity: .75;
+            transition: .3s ease;
+        }
     }
 }
 .form-control[type="number"]::-webkit-inner-spin-button,

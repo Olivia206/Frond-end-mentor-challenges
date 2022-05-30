@@ -1,3 +1,8 @@
+function cartBtn() {
+    var cartCont = document.querySelector(".cart-content");
+    cartCont.classList.toggle("cartVisible");
+}
+
 let productnb = document.querySelector('.quantity')
 let unitPrice = document.querySelector('.price span').textContent
 let notifNb = document.querySelector('.cart-number-products')
@@ -24,7 +29,7 @@ $(document).ready(function() {
             let productSum = unitPrice * inputValue
 
             /* On rentre les infos dans le panier */
-            cartProductImage.src = document.querySelector('.view #showed').src
+            cartProductImage.src = document.querySelector('.preview').src
             cartProductTitle.textContent = document.querySelector('h1').textContent
             cartProductPrice.textContent = cartBuying
             cartProductPrice.innerHTML += ' <b>$' + productSum + '</b>'

@@ -1,11 +1,17 @@
 .add-button {
     flex:1;
     margin-left: 20px;
+    transition: .3s ease;
 
     svg {
         margin-right: 20px;
         path {
             fill: #fff;
         }
+    }
+    &:hover {
+        opacity: .5;
+        box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+        transition: .3s ease;
     }
 }

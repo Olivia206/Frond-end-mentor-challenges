@@ -4,6 +4,10 @@
 
     .cart-icon {
         position: relative;
+        background: none;
+        border: none;
+        cursor: pointer;
+        
         img {
             height: 20px;
         }
@@ -21,10 +25,18 @@
         position: absolute;
         background-color: #fff;
         width: 360px;
-        transform: translateX(-50%) translateY(30px);
+        transform: translateX(-50%) translateY(0px);
         box-shadow: 5px 5px 10px rgba(0,0,0,.1);
         border-radius: 10px;
+        visibility: 0;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s, transform 0.5s;
 
+        &.cartVisible {
+            transform: translateX(-50%) translateY(30px);
+            opacity: 1;
+            visibility: 1;
+        }
         .cart-head {
             padding: 25px;
             border-bottom: 1px solid $lightGrayishBlue;
