@@ -1,0 +1,33 @@
+
+
+.form-group {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+
+    input[type="number"] {
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+        text-align: center;
+        max-width: 50%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+    input, button {
+        background-color: transparent;
+        border: none;
+    }
+    button {
+        cursor: pointer;
+    }
+}
+.form-control[type="number"]::-webkit-inner-spin-button,
+.form-control[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
