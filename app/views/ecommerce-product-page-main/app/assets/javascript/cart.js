@@ -30,7 +30,8 @@ $(document).ready(function() {
             cartProductPrice.innerHTML += ' <b>$' + productSum + '</b>'
         
             let deleteBtn = document.querySelector('.cart-product-delete')
-        
+            
+            /* Actions du bouton supprimer*/
             deleteBtn.addEventListener('click', function(){
                 $(productnb).val(0)
                 notifNb.textContent = ""
