@@ -23,7 +23,7 @@ header {
                     width: 100%;
                     position:absolute;
                     pointer-events: none;
-                    transform: translateY(62px);
+                    transform: translateY(64px);
                     opacity:0;
                     transition: .3s ease;
                 }
@@ -41,13 +41,8 @@ header {
             display:flex;
             align-items: center;
             
-            .user_cart {
-                margin-right: 40px;
-                img {
-                    height: 20px;
-                }
-            }
-            .user_profile {
+            
+            .user-profile {
                 img {
                     height: 50px;
                 }

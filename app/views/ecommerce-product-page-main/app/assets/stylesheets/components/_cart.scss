@@ -1,0 +1,81 @@
+.user-cart {
+    margin-right: 40px;
+    position: relative;
+
+    .cart-icon {
+        position: relative;
+        img {
+            height: 20px;
+        }
+        .cart-number-products {
+            background-color: $orange;
+            color: #fff;
+            padding: 0px 7px;
+            border-radius: 10px;
+            font-size: 10px;
+            position: absolute;
+            transform: translateX(-12px) translateY(-5px);
+        }
+    }
+    .cart-content {
+        position: absolute;
+        background-color: #fff;
+        width: 360px;
+        transform: translateX(-50%) translateY(30px);
+        box-shadow: 5px 5px 10px rgba(0,0,0,.1);
+        border-radius: 10px;
+
+        .cart-head {
+            padding: 25px;
+            border-bottom: 1px solid $lightGrayishBlue;
+        }
+        .cart-body {
+            padding: 20px;
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .notice {
+                color: $grayishBlue;
+                text-align: center;
+            }
+            .cart-product {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .cart-product-image {
+                    border-radius: 4px;
+                    height: 50px;
+                    width: 50px;
+                }
+                .cart-product-infos {
+                    margin: 0 20px;
+                    color: $darkGrayishBlue;
+                    .cart-product-title {
+                        margin-bottom: 10px;
+                    }
+                    b {
+                        color: #000;
+                    }
+                }
+                .cart-product-delete {
+                    cursor: pointer;
+                    border: none;
+                    background: none;
+                }
+                .buy-button {
+                    width: 100%;
+                    flex:1;
+                    margin-top: 25px;
+                }
+            }
+            .no-display {
+                display: none;
+            }
+        }
+        
+    }
+}
