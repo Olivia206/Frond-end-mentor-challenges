@@ -12,6 +12,7 @@ header {
         }
         .sepa {
             flex:1;
+            display:none;
         }
         .menu {
             flex:1;
@@ -80,6 +81,9 @@ header {
         nav {
             padding: 25px;
             justify-content: space-between;
+            .sepa {
+                display:flex;
+            }
             .menu {
                 order: -1;
                 margin: 0 15px 0 0 ;
