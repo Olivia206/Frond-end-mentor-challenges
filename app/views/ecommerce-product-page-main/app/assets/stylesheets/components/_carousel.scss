@@ -1,0 +1,62 @@
+.product-carousel {
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    max-width: 400px;
+    position: relative;
+    align-items: center;
+    
+
+    #showed, #modal-showed {
+        max-width: 400px;
+        max-height: 400px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .thumbnail {
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 10px;
+        background: $orange;
+
+        &:hover, &.active {
+            opacity: .5;
+            border: 2px solid $orange;
+        }
+    }
+    .arrow {
+        background-color: #fff;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        position:absolute;
+        cursor: pointer;
+        margin-bottom: 115px;;
+
+        * {
+            transition: .3s ease;
+        }
+
+        &:hover path {
+            stroke: $orange;
+        }
+    }
+    #slide-left {
+        left: 0;
+        transform: translateX(calc(-50%));
+    }
+    #slide-right {
+        right: 0;
+        transform: translateX(50%);
+    }
+}

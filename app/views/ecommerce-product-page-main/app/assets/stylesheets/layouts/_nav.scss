@@ -1,0 +1,57 @@
+header {
+    border-bottom: 1px solid $lightGrayishBlue;
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+
+        a {
+            color: $grayishBlue;
+        }
+        .menu {
+            flex:1;
+            margin: 0 50px;
+            a {
+                margin-right: 30px;
+                position: relative;
+                transition: .3s ease;
+                &::before {
+                    content: "";
+                    height:4px;
+                    background-color: $orange;
+                    width: 100%;
+                    position:absolute;
+                    pointer-events: none;
+                    transform: translateY(62px);
+                    opacity:0;
+                    transition: .3s ease;
+                }
+                &:hover {
+                    color: $darkGrayishBlue;
+                    transition: .3s ease;
+                    &::before {
+                        opacity:1;
+                        transition: .3s ease;
+                    }
+                }
+            }
+        }
+        .user {
+            display:flex;
+            align-items: center;
+            
+            .user_cart {
+                margin-right: 40px;
+                img {
+                    height: 20px;
+                }
+            }
+            .user_profile {
+                img {
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
