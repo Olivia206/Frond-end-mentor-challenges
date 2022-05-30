@@ -14,9 +14,11 @@ let cartProductImage = document.querySelector('.cart-product-image')
 
 let totalPrice = productnb * unitPrice
 
-/*** On récupère la valeur de l'input ***/
+/*** Au clic sur le bouton "add to cart" ***/
 $(document).ready(function() {
-    $('.input-update').click(function() {
+    $('.add-button').click(function() {
+
+        /*** On récupère la valeur de l'input ***/
         var inputValue = $(productnb).val();
 
         if (inputValue > 0) {
@@ -50,10 +52,6 @@ $(document).ready(function() {
             notice.classList.remove('no-display')
             cartProduct.classList.add('no-display')
         }
-        
-        
-        
-
     });
 });
 

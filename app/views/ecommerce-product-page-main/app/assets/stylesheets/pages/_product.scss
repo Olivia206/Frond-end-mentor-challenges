@@ -24,9 +24,7 @@
             text-decoration: line-through;
             color: $grayishBlue;
         }
-        
     }
-
     .buy-product {
         display: flex;
         
@@ -35,8 +33,29 @@
             border-radius: 10px;
             padding: 20px 15px;
         }
-        
+    }
+}
 
-        
+@media (max-width: 600px) {
+    .product {
+        margin: 25px;
+
+        .price-product {
+            margin: 40px 0 30px;
+            div {
+                margin: 0;
+                display: inline-flex;
+            }
+            span {
+                float: right;
+            }
+        }
+
+        .buy-product {
+            flex-direction: column;
+            .form-group {
+                width: 100%;
+            }
+        }
     }
 }

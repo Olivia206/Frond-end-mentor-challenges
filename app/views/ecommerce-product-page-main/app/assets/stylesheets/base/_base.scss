@@ -10,6 +10,7 @@
   }
   body {
     margin: 0 165px;
+    width: 100%;
 
     main {
       display:flex;
@@ -17,3 +18,14 @@
       margin: 80px 0;
     }
   }
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+
+    main {
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+}
