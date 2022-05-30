@@ -17,8 +17,8 @@ let carousels = document.getElementsByClassName('product-carousel')
 
 let btnLeft = document.getElementById('slide-left')
 let btnRight = document.getElementById('slide-right')
-let btnLeftModal = document.querySelector('.btn-modal-l')
-let btnRightModal = document.querySelector('.btn-modal-r')
+let btnLeftModal = document.getElementById('slide-left-modal')
+let btnRightModal = document.getElementById('slide-right-modal')
 
 let step = 0;
 let nbImages = thumbnails.length

@@ -50,11 +50,11 @@
             stroke: $orange;
         }
     }
-    #slide-left {
+    #slide-left, #slide-left-modal {
         left: 0;
         transform: translateX(calc(-50%));
     }
-    #slide-right {
+    #slide-right, #slide-right-modal {
         right: 0;
         transform: translateX(50%);
     }
@@ -86,10 +86,10 @@
                 height: 40px;
                 width: 40px;
             }
-            #slide-left {
+            #slide-left, #slide-left-modal {
                 transform: translateX(calc(10%));
             }
-            #slide-right {
+            #slide-right, #slide-right-modal {
                 right: 0;
                 transform: translateX(-10%);
             }
