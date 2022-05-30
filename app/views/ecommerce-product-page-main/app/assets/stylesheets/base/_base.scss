@@ -8,24 +8,29 @@
   a {
     text-decoration: none;
   }
-  body {
-    margin: 0 165px;
-    width: 100%;
-
-    main {
-      display:flex;
-      align-items: center;
-      margin: 80px 0;
+  html {
+    overflow-x: hidden;
+    body {
+      margin: 0 165px;
+      width: 100%;
+  
+      main {
+        display:flex;
+        align-items: center;
+        margin: 80px 0;
+      }
     }
   }
 
 @media (max-width: 600px) {
-  body {
-    margin: 0;
-
-    main {
-      flex-direction: column;
+  html {
+    body {
       margin: 0;
+
+      main {
+        flex-direction: column;
+        margin: 0;
+      }
     }
   }
 }
