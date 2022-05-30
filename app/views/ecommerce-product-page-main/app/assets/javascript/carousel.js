@@ -13,8 +13,12 @@ for (var i=0; i < thumbnails.length; i++) {
     })
 }
 
+let carousels = document.getElementsByClassName('product-carousel')
+
 let btnLeft = document.getElementById('slide-left')
 let btnRight = document.getElementById('slide-right')
+let btnLeftModal = document.querySelector('.btn-modal-l')
+let btnRightModal = document.querySelector('.btn-modal-r')
 
 let step = 0;
 let nbImages = thumbnails.length
@@ -33,8 +37,6 @@ btnRight.addEventListener('click', function() {
     document.getElementById('showed').src = thumbnails[step].src
     document.getElementById('modal-showed').src = thumbnails[step].src
 })
-
-
 btnLeft.addEventListener('click', function() {
     step --
     if (step >= nbImages)
@@ -43,3 +45,22 @@ btnLeft.addEventListener('click', function() {
     document.getElementById('showed').src = thumbnails[step].src
     document.getElementById('modal-showed').src = thumbnails[step].src
 })
+
+
+btnRightModal.addEventListener('click', function() {
+    step ++
+    if (step >= nbImages)
+    removeShowedImage()
+    thumbnails[step].classList.add('showedImage')
+    document.getElementById('showed').src = thumbnails[step].src
+    document.getElementById('modal-showed').src = thumbnails[step].src
+})
+btnLeftModal.addEventListener('click', function() {
+    step --
+    if (step >= nbImages)
+    removeShowedImage()
+    thumbnails[step].classList.add('showedImage')
+    document.getElementById('showed').src = thumbnails[step].src
+    document.getElementById('modal-showed').src = thumbnails[step].src
+})
+
