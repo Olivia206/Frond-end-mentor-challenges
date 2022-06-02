@@ -1,0 +1,11 @@
+{
+  "name": "static-job-listings-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Job listings with filtering coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./app/assets/stylesheets/main.scss:./app/assets/stylesheets/style.css  --style compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}

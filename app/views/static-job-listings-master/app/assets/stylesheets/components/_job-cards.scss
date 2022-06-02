@@ -1,0 +1,57 @@
+.job-card {
+    background: #fff;
+    border-radius: 5px;
+    display:flex;
+    box-shadow: 2px 10px 5px rgba(91, 164, 164,.1);
+    margin: 25px;
+    padding: 35px;
+    align-items: center;
+
+    &.new {
+        border-left: 5px solid $veryDarkGrayishCyan;
+    }
+
+    .job-description {
+        flex:1;
+        margin: 0 25px;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .job-status {
+            display:flex;
+
+            b {
+                color: $desaturatedDarkCyan;
+                margin-right: 20px;
+            }
+            span {
+                padding: 7px 9px;
+                background-color: $veryDarkGrayishCyan;
+                border-radius: 13px;
+                font-size: 10px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-right: 7px;
+
+                &.job-new {
+                    background-color: $desaturatedDarkCyan;
+                }
+            }
+        }
+        a {
+            color: $veryDarkGrayishCyan;  
+            font-weight: bold;  
+            margin: 15px 0 18px;
+
+            &:hover {
+                color: $desaturatedDarkCyan;
+            }
+        }
+        .job-application {
+            color: $darkGrayishCyan;
+            font-size: 12px;
+        }
+    }
+}

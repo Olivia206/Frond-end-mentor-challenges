@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+  font-size: $font-text;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: $lightGrayishCyan;
+
+  main {
+    margin: 0 165px;
+  }
+}
+
+@media (max-width: 600px) {
+}
