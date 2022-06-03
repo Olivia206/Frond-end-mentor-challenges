@@ -9,6 +9,12 @@
 
     &.new {
         border-left: 5px solid $veryDarkGrayishCyan;
+        transition: .3s ease;
+
+        &:hover {
+            border-color: $desaturatedDarkCyan;
+            transition: .3s ease;
+        }
     }
 
     .job-description {
@@ -44,14 +50,57 @@
             color: $veryDarkGrayishCyan;  
             font-weight: bold;  
             margin: 15px 0 18px;
+            transition: .3s;
 
             &:hover {
                 color: $desaturatedDarkCyan;
+                transition: .3s;
             }
         }
         .job-application {
             color: $darkGrayishCyan;
             font-size: 12px;
+            display:flex;
+            align-items: center;
+            span {
+                display:flex;
+                align-items: center;
+                &::after {
+                    content: "";
+                    height: 4px;
+                    width: 4px;
+                    border-radius: 100%;
+                    margin: 0 15Px;
+                    background-color: $darkGrayishCyan;
+                }
+                &:last-child::after {
+                    content: none;
+                }
+            }
+        }
+    }
+    .job-tags {
+        display:flex;
+        align-items:center;
+        flex-wrap: wrap;
+
+        a {
+            color: $desaturatedDarkCyan;
+            background-color: $lightGrayishCyan;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 4px;
+            margin-left: 16px;
+            transition: .3s ease;
+
+            &:first-child {
+                margin: 0;
+            }
+            &:hover {
+                background-color: $desaturatedDarkCyan;
+                color: $lightGrayishCyan;
+                transition: .3s ease;
+            }
         }
     }
 }

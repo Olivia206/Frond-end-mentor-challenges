@@ -5,7 +5,7 @@
 let http = new XMLHttpRequest(); /* avec une variable http qui contient toutes les méthodes de l'objet */
 
 
-http.open('get', "../../../data.json", true) /* prepare */
+http.open('get', "data.json", true) /* prepare */
 
 
 http.send() /* on envoie la requête */
@@ -29,13 +29,15 @@ http.onload = function () {
             /* On construit le HTML de output */
 
             output += `
-            <div class="job-card`
+            <div id="${item.id}" class="job-card`
 
             if (item.new) {
                 output += ` new`
             }
+
             
-            output += `" id="${item.id}" data-role="${item.role}" data-level="${item.level}" data-languages="${item.languages}" data-tools="${item.tools}">
+            
+            output += `" data-role="${item.role}" data-level="${item.level}" data-languages="${item.languages}" data-tools="${item.tools}">
                 <img src="${item.logo}" alt />
                 <div class="job-description">
                     <div class="job-status">
@@ -61,10 +63,23 @@ http.onload = function () {
                     </div>
                 </div> 
                 <div class="job-tags">
-                    <span>${item.role}</span>
-                    <span>${item.level}</span>
-                    <span>${item.languages}</span> 
-                    <span>${item.tools}</span>
+                    <a href="#">${item.role}</a>
+                    <a href="#">${item.level}</a>
+                    `
+            /* On affiche tous les langages de l'array */
+            let allLanguages = item.languages
+            for (i=0;i<allLanguages.length;i++) {
+                output += `<a href="#">${allLanguages[i]}</a>`
+            }
+            
+            /* Idem pour l'array outils */
+            let allTools = item.tools
+            for (i=0;i<allTools.length;i++) {
+                output += `<a href="#">${allTools[i]}</a>`
+            }
+
+            output += `
+                    
                 </div>
             </div>
         `;
