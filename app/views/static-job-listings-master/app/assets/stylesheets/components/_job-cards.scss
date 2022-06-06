@@ -2,8 +2,8 @@
     background: #fff;
     border-radius: 5px;
     display:flex;
-    box-shadow: 2px 10px 5px rgba(91, 164, 164,.1);
-    margin: 25px;
+    box-shadow: 0px 10px 15px -7px rgb(93 164 164 / 50%);
+    margin: 25px 0;
     padding: 35px;
     align-items: center;
 
@@ -15,6 +15,9 @@
             border-color: $desaturatedDarkCyan;
             transition: .3s ease;
         }
+    }
+    &.hidden {
+        opacity:0;
     }
 
     .job-description {
@@ -84,7 +87,7 @@
         align-items:center;
         flex-wrap: wrap;
 
-        a {
+        button {
             color: $desaturatedDarkCyan;
             background-color: $lightGrayishCyan;
             font-weight: bold;
@@ -92,11 +95,18 @@
             border-radius: 4px;
             margin-left: 16px;
             transition: .3s ease;
+            border:none;
+            cursor: pointer;
 
             &:first-child {
                 margin: 0;
             }
             &:hover {
+                background-color: $desaturatedDarkCyan;
+                color: $lightGrayishCyan;
+                transition: .3s ease;
+            }
+            &.active {
                 background-color: $desaturatedDarkCyan;
                 color: $lightGrayishCyan;
                 transition: .3s ease;
