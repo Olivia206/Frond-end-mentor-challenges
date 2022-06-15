@@ -1,0 +1,11 @@
+{
+  "name": "interactive-comments-section-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Interactive comments section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/stylesheets/main.scss:./assets/stylesheets/style.css  --style compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}

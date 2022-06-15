@@ -1,0 +1,18 @@
+/* Error: expected ";".
+ *    ,
+ * 18 | $veryLightGray: hsl(228, 33%, 97%);
+ *    |               ^
+ *    '
+ *   assets\stylesheets\abstracts\_variables.scss 18:15  @import
+ *   assets\stylesheets\main.scss 2:9                    root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a    \2577 \a 18 \2502  $veryLightGray: hsl(228, 33%, 97%);\d\a    \2502                ^\a    \2575 \a   assets\\stylesheets\\abstracts\\_variables.scss 18:15  @import\a   assets\\stylesheets\\main.scss 2:9                    root stylesheet';
+}

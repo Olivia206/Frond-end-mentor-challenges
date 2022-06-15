@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: $font-base;
+  }
+  a {
+    text-decoration: none;
+  }
+  html {
+    body {
+      main {
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
+
+@media (max-width: 600px) {
+  
+}
